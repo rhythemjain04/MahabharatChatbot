@@ -1,11 +1,11 @@
 import streamlit as st
-from transformers import pipeline
+# from transformers import pipeline
 from neo4j import GraphDatabase
 from back import execute
 
 # Load the Hugging Face question-answering model
 st.write("Loading model...")
-question_answering_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
+# question_answering_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
 st.write("Model loaded successfully!")
 
 # Initialize Neo4j connection
